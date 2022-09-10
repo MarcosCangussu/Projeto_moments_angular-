@@ -1,1 +1,109 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #444;
+}
+body {
+    /* background-color: #27272A; */
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+    transition: .4s;
+}
+
+a:hover {
+    color: #DEC129;
+}
+
+/* FORM */
+
+form {
+    width: 28.125rem;
+    margin: 0 auto;
+}
+
+.form-group {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.6rem;
+    color: #777;
+    font-size: 0.8rem;
+}
+
+input[type="submit"] {
+    background-color: #EFEFEF;
+    border: 2px solid transparent;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .4s,
+}
+
+input[type="submit"]:hover {
+    color: #DEC129;
+    border-color: #DEC129;
+    background-color: transparent;
+
+}
+
+.validation-error p {
+    color: #DC3545;
+    margin-top: 0.4rem;
+    border-left: 3px solid #DC3545;
+    padding-left: 0.2rem;
+}
+
+/* BUTTONS */
+
+.edit-btn, .remove-btn {
+    border: 1px solid #EFEFEF;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    background-color: #FFF;
+    transition: 0.4s;
+}
+
+button fa-icon,
+a fa-icon {
+    margin-right: 0.2rem;
+}
+
+.edit-btn, .edit-btn path {
+    border-color: #007BFF;
+    color: #007BFF;
+}
+
+.edit-btn:hover, .edit-btn:hover path {
+    background-color: #007BFF;
+    color: #FFF;
+}
+
+.remove-btn, .remove-btn path {
+    border-color: #DC3545;
+    color: #DC3545;
+}
+
+.remove-btn:hover, .remove-btn:hover path {
+    background-color: #DC3545;
+    color: #FFF;
+}
+
